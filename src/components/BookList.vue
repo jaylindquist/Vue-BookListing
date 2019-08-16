@@ -2,13 +2,13 @@
   <div>
     <h1>{{ title }}</h1>
     <ul>
-      <book-item v-for="book in books" v-bind:key="book.title" v-bind:book="book" />
+      <book-item v-for="book in books" :key="book.title" :book="book" />
     </ul>
   </div>
 </template>
 
 <script>
-import BookItem from './BookItem'
+import BookItem from './BookItem';
 
 export default {
     name: 'BookList',
